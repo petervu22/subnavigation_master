@@ -1,0 +1,1005 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style type="text/css">
+
+#block-quicklinks > nav > ul > li.button-item > a {
+          text-decoration: none !important;
+      }
+
+      /* removed last border for the desktop view  */
+      a.menu_item.hover{
+        border: none !important; 
+      }
+      #block-quicklinks .menu--quick a:first-of-type, #block-quicklinks-2 .menu--quick a:first-of-type, #onlinememquicklinks .menu--quick a:first-of-type, #block-quicklinks-4 .menu--quick a:first-of-type {
+          color: #fff;
+          font-size: 1.2rem;
+          line-height: 1.6;
+          margin-top: 0.2rem;
+      }
+        /*removed whitespace*/ 
+      body, html {
+            width: 100%;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-overflow-scrolling: touch;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }  
+        #block-onlinemcs2020hero .overlay__content--center h1, #block-onlinemds2021hero .overlay__content--center h1, #block-onlinememhero .overlay__content--center h1, [id^="block-online"][id$="hero"] .overlay__content--center h1, [id^="block-online"][id$="hero-2"] .overlay__content--center h1, [id^="block-online"][id$="admission"] .overlay__content--center h1, [id^="block-online"][id$="curriculum"] .overlay__content--center h1, [id^="block-online"][id$="studentexperience"] .overlay__content--center h1, [id^="block-online"][id$="faculty"] .overlay__content--center h1, [id^="block-online"][id$="veterans"] .overlay__content--center h1, [id^="block-online"][id$="blog"] .overlay__content--center h1 {
+            font-family: CopernicusMedium, sans-serif;
+            line-height: 1.2;
+            text-align: left;
+            color: inherit !important;
+        }
+        
+        .panel .article-overlay__content, .panel .overlay__content, .panel .video-overlay__content, .panel-overlay__content {
+            position: absolute;
+            padding: 15px;
+            color: white !important;
+        }
+        
+        #block-quicklinks .menu--quick a:first-of-type, #block-quicklinks-2 .menu--quick a:first-of-type, #onlinememquicklinks .menu--quick a:first-of-type, #block-quicklinks-4 .menu--quick a:first-of-type {
+             color: #fff; 
+            font-size: 14px !important;
+            line-height: 1.6;
+        }
+        #block-quicklinks > nav > ul > li:nth-child(7) > a {
+            color: #00205B !important;
+        }
+        #block-quicklinks > nav > ul > li > a{
+          color: #fff;
+            font-size: 0.9rem !important;
+            line-height: 1.6;
+        }
+        .ckeditor-accordion-container > dl dt > a {
+            padding: 25px 15px;
+            background-color: transparent;
+            font-family: CopernicusExtraBold, serif;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            color: #0a509e;
+            border-bottom: 1px solid #999;
+            border-top: none;
+        }
+        div.title h2, h2.h2, .matrix__body h2, .grid-mw--1080 h2, div.matrix--default div.matrix__body .h2 {
+            line-height: 1.25 !important;
+            font-family: CopernicusMedium, serif;
+            /* font-size: 3rem !important; */
+            margin-bottom: 0rem;
+        }
+        
+        /* Navigation */
+        
+          #block-quicklinks > nav:after{
+            content: '';
+            clear: both;
+            display: table;
+          }
+        
+        #block-quicklinks > nav ul {
+            float: right;
+            list-style: none;
+            position: relative;
+            /* margin-top: 2px; */
+        }
+        
+        #block-quicklinks > nav ul li {
+            vertical-align: top;
+            margin: 0 5px;
+            float: left;
+            margin: 0px 8px 0px 10px;
+        }
+        
+          #block-quicklinks > nav ul li a{
+              color: #fff; 
+              text-decoration: none; 
+              padding: 10px 15px; 
+              text-transform: uppercase; 
+              font-weight: 600;
+              position: static; 
+          }
+        
+        .menu--quick .menu__item:not(:first-child)::after {
+            content: '';
+        }
+
+         #block-quicklinks > nav ul li a:hover {
+          color: #A5C151;
+          /* border-bottom: solid 3px #A5C151; */
+          text-decoration: underline;
+          text-decoration-thickness: 3px;
+          text-underline-offset: 5px;
+          text-decoration-color: #A5C151;
+        }
+
+        /* Indicator bar hoverable with active state */
+        
+        #block-quicklinks > nav ul ul{
+            position: absolute; 
+            /* opacity: 0;
+            visibility: hidden;  */
+            display: none; 
+            transition: top .3s;
+            width: 43%;
+          }
+        
+        .menu--quick .menu__item {
+            position: relative;
+            letter-spacing: 1px;
+            color: #fff;
+            -webkit-transition: color .3s ease;
+            -o-transition: color .3s ease;
+            -moz-transition: color .3s ease;
+            transition: color .3s ease;
+            cursor: pointer;
+        }
+        
+        #block-quicklinks > nav > ul > li.button-item:hover{
+          background: #E0E2E6; 
+          color: #00205B; 
+          font-size: 14px; 
+        }
+/* 
+        #block-quicklinks > nav ul li:hover > ul#morecontent1{
+            opacity: 1;
+            visibility: visible;
+            position: absolute;
+            display:block; 
+          }
+
+        #block-quicklinks > nav ul li:hover > ul#morecontent2{
+            opacity: 1;
+            visibility: visible;
+            position: absolute;
+            display:block; 
+          }
+
+        #block-quicklinks > nav ul li:hover > ul#morecontent3{
+            opacity: 1;
+            visibility: visible;
+            position: absolute;
+            display:block; 
+          }
+
+        #block-quicklinks > nav ul li:focus > ul#morecontent3{
+            opacity: 1;
+            visibility: visible;
+            position: absolute;
+            display:block; 
+          } */
+
+
+        /* selected link */
+        #block-quicklinks > nav > ul > li.button-item:hover:active {
+          background: #fff; 
+          color: #00205B; 
+          font-size: 14px; 
+        } 
+
+        /* style for subnavigation mobile */
+        #block-quicklinks > nav ul ul li{
+            position: relative;
+            margin: 0px;
+            width: 229px;
+            float: none;
+            display: list-item;
+            text-transform: uppercase; 
+            font-size: 14px; 
+            font-family: MalloryBook,sans-serif !important;
+            line-height: 30px;
+            z-index: 2;
+            text-align: left;
+            background: #00205B; 
+
+          }
+        
+        #block-quicklinks > nav ul ul li a{
+            line-height: 30px;
+            width: 229px;
+          }
+
+        
+        /* Hides the buttons */ 
+        
+        .show{
+            display: none;
+        }
+        
+        input#btn {
+            display: none;
+        }
+        
+        input#btn-1 {
+            display: none; 
+        }   
+        
+        input#btn-2 {
+            display: none; 
+        }
+        
+        input#btn-3 {
+            display: none;
+        }
+        
+        /* Hides the buttons */ 
+        
+        #block-quicklinks > nav > label{
+            display: none; 
+        }
+        
+        
+        li.contentline::after{
+            content: '|';
+            top: 5px;
+            left: -2.5px;
+            color: #fff;
+            height: 19px;
+            width: 6px;
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 0;
+            line-height: 19px;
+            text-align: center;
+        }
+        
+        .menu--quick .menu__item:not(:first-child)::after{
+            top: 5px;
+        }
+        
+        .menu--quick {
+            padding: 0px !important; 
+            display: flex;
+            flex-wrap: wrap;
+            height: 50px; 
+        }
+        
+        #block-quicklinks > nav > li > a{
+            color: white; 
+            text-decoration: none;
+            line-height: 65px; 
+            text-decoration: none; 
+            font-size: 14px;  
+            text-transform: uppercase; 
+            font-weight: 600;
+        }
+        
+        #block-quicklinks > nav > ul > li.button-item {
+            text-decoration: none;
+            list-style: none; 
+            width: 165px;
+            background-color: #A5C151;
+            margin-left: 8rem; 
+        }
+        
+        #block-quicklinks > nav > ul > li.button-item > a{
+            color: #00205B; 
+        }
+        
+        .menu--quick {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -moz-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding: inherit; 
+            background-color: rgb(0,30,107);
+            text-align: center;
+        }
+        
+        #block-quicklinks > nav > li > a{
+          color: rgb(0,30,107);
+          font-size: 14px;
+          font-weight: bold;
+          letter-spacing: 0.53px;
+        }
+        
+        .menu--quick {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        
+        .submenu{
+          display: flex; 
+          flex-direction: column; 
+          position: absolute; 
+          width: 100%;
+        }
+        
+        /* Hoverable Buttons */
+        
+        #block-quicklinks > nav > li:hover{
+          background-color: #E0E2E6;
+        }
+        
+        #block-quicklinks > nav > li:active{
+          background-color: #FFFFFF;
+        }
+        
+        /* border none */
+        
+        /* #block-quicklinks > nav ul li:last-child a{
+          border: none;
+         } */
+        /* Media Queries Mobile device */
+        
+        @media screen and (max-width: 992px){
+        /*div.title .h6, h6.h6 {
+            margin-top: 8em;
+         }*/
+        
+        div.title__content {
+          position: static;
+          z-index: 1;
+        }
+        }
+        
+        /* Media Queries for 943px device */
+        
+        @media all and (max-width: 943px){
+        
+        #block-quicklinks > nav > ul > li.button-item {
+            text-decoration: none;
+            list-style: none;
+            width: 165px;
+            background-color: #A5C151;
+            margin-left: -0.9rem;
+        }
+        }
+        
+        /* Media Queries for 1051px device */
+        
+        @media all and (max-width: 1051px){
+        
+        #block-quicklinks > nav > ul > li.button-item {
+            text-decoration: none;
+            list-style: none;
+            width: 165px;
+            background-color: #A5C151;
+            margin-left: 1rem;
+         }
+        }
+        
+        /* Media Queries for 1010px device */
+        
+        @media screen and (max-width:1020px){
+          li.contentline::after {
+            content: '|';
+            top: 5px;
+            left: -2.5px;
+            color: #fff;
+            height: 19px;
+            width: 6px;
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 0;
+            line-height: 19px;
+            text-align: center;
+            display: none; 
+         }
+        }
+        
+        /* Media Queries for 1096px device green button */
+        
+        @media screen and (min-width: 1096px) {
+        #block-quicklinks > nav > ul > li.button-item {
+            text-decoration: none;
+            list-style: none;
+            width: 229px;
+            background-color: #A5C151;
+            margin-left: 5rem;
+            height: 50px; 
+          }
+        }
+        
+        /* Media Queries for 1104px device green button */
+        
+        @media all and (max-width: 1104px){
+        
+        #block-quicklinks > nav > ul > li.button-item {
+            text-decoration: none;
+            list-style: none;
+            font-family: MalloryBook,sans-serif;
+            width: 229px;
+            background-color: #A5C151;
+            margin-left: 1rem;
+            position: absolute; 
+            right: -22vw;    
+            padding-bottom: 10px; 
+         }
+        }
+        
+        /* Media Queries Mobile device */
+        
+        @media all and (max-width: 740px) and (min-width: 360px){
+
+        /* #block-quicklinks > nav > ul > li:nth-child(7) > a {
+          display: none;
+        } */
+
+        #block-quicklinks > nav > ul > li:nth-child(3) > label > a {
+            margin: 0;
+            border: none;
+        }
+
+        /* #block-quicklinks > nav > ul > li:nth-child(2) > a {
+            display: none;
+        }
+         */
+        ul strong, li strong{
+           font-family: MalloryBook, serif !important; 
+        }
+
+        /* Hides the nav buttons for mobile  */
+
+        #morecontent1{
+          display: none !important; 
+        }
+
+        #morecontent2{
+          display: none !important; 
+        }
+
+        #morecontent3{
+          display: none !important; 
+        }
+        
+        /* Hides the buttons */ 
+        
+        .show{
+            display: none;
+        }
+        
+        input#btn {
+            display: none;
+        }
+        
+       input#btn-1 {
+            display: none;
+        } 
+        
+        input#btn-2 {
+            display: none; 
+        }
+        
+        input#btn-3 {
+            display: none;
+        }
+        
+        .left_content {
+         position: fixed;
+        }
+        
+        #block-quicklinks .menu--quick a:first-of-type, #block-quicklinks-2 
+        .menu--quick a:first-of-type, #onlinememquicklinks 
+        .menu--quick a:first-of-type, #block-quicklinks-4 .menu--quick a:first-of-type {
+         color: #fff;
+         font-size: 1.2rem;
+         line-height: unset !important;
+        }
+        
+        #block-quicklinks > nav ul li a:hover {
+         color: #A5C151;
+        }
+        
+        button, input, label, select, textarea {
+         font-size: 1.3rem;
+         line-height: unset !important;
+        }
+        
+        .arrow {
+         display: block; 
+         color: #A5C151;
+         display: inline; 
+        }
+        
+        p.body.body-large.body\@m-medium.discover_small {
+         position: fixed;
+        }
+        
+        #block-quicklinks > nav {
+          left: 50%;
+          width: 100%;
+          background: #001e6b;
+          line-height: 55px;
+          padding: 8px 12px;
+          position: sticky;
+          z-index: 1;
+          top: 0;
+          height: 50px; 
+        }
+        
+        p.body.body-large.body\@m-medium.discover_small {
+         position: relative;
+        }
+        
+        #block-quicklinks > nav ul li a{
+         color: white;
+         text-decoration: none;
+         font-size: 14px;
+         display: block;
+         margin-left: 1rem; 
+         border-bottom: 1px solid #fff;
+        }
+        
+        #block-quicklinks nav ul li, nav ul ul li{
+         line-height: 30px;
+         cursor: pointer;
+         text-align: left; 
+         width: 100%; 
+         display: block; 
+        }
+        
+        #block-quicklinks > nav ul ul li{
+         position: relative;
+         margin: 0px;
+         width: 250px;
+         float: none;
+         display: list-item;
+         text-transform: uppercase; 
+         font-size: 14px; 
+         font-family: MalloryBook, sans-serif !important;
+         line-height: 30px;
+         text-align: left;
+         background: transparent; 
+        }
+        
+        #block-quicklinks nav ul ul{
+         top: 70px; 
+         position: static; 
+
+        }
+        
+        #block-quicklinks .button span{
+         transition: 0.5s;
+        }
+        
+        #block-quicklinks > nav > label > span{
+         margin-left: 12rem; 
+        }
+        
+        #block-quicklinks > .button span{
+         float: right;
+         line-height: 40px;
+         transition: 0.5s;
+        }
+        
+        #block-quicklinks .button span{
+         transition: 0.5s;
+        }
+        
+        #block-quicklinks .button span.rotate{
+         transform: rotate(180deg);
+        }
+        
+        .fa-angle-down:before {
+         content: "\f107";
+         color: #A5C151;
+        }
+        
+        #block-quicklinks nav ul{
+         position: absolute;
+         background: rgb(0,30,107);
+         list-style: none;
+         top: 40px;
+         width: 100%;
+         display: none;
+         color: white; 
+         flex-direction: column; 
+         float: left; 
+         margin-right: 0px; 
+         padding-bottom: 13px; 
+        }
+        
+        #block-quicklinks [id^=btn]:checked + ul{
+         display: block;
+        }
+        
+        #block-quicklinks .button {
+          position: relative;
+          display: inline-block;
+          text-align: center;
+          color: white;
+          font-weight: 600;
+          text-align: left;
+          font-family: MalloryBold, sans-serif; 
+        }
+        
+        #block-quicklinks > nav > ul > li.button-item {
+         text-decoration: none;
+         list-style: none;
+         font-family: MalloryBook, sans-serif !important;
+         width: 165px;
+         background-color: #A5C151;
+         margin-left: 1.1rem;
+         margin-right: 7rem; 
+         width: 82%;
+         text-align: center; 
+         position: relative;
+         right: 0vw !important;
+        }
+        
+        #block-quicklinks > nav li {
+         width: 100%;
+         text-align: center; 
+         display: block !important; 
+         }
+        
+        li.contentline::after {
+         display: none; 
+         } 
+
+         a.menu_item.hover {
+        border: none !important;
+        }
+ 
+        /* last child */
+        /* #block-quicklinks > nav ul li:last-child a{
+         border: none;
+         } */
+        
+        #block-quicklinks > nav ul li:hover > ul {
+         position: static;
+         }
+        
+        #block-quicklinks > li:hover .submenu > li {
+         display: block; 
+         top: 0px; 
+         }
+        
+        .show{
+         display: block;
+         color: white;
+         font-size: 14px;
+         cursor: pointer;
+         color: white;
+         text-decoration: none;
+         margin-left: 1rem;
+         border-bottom: 1px solid #fff;
+         width: 80%;
+         font-weight: 600;
+         padding: 5px 2px;
+         line-height: 20px; 
+         line-height: 2rem; 
+        }
+        
+        #block-quicklinks > nav ul ul {
+         top: 70px; 
+         position: static; 
+         float: none; 
+         display: none; 
+         opacity: 1; 
+         visibility: visible; 
+         margin-left: 2rem; 
+        }
+        
+        #block-quicklinks > [id^=btn]:checked + ul {
+         display: block; 
+        }
+        
+        #block-quicklinks > nav > ul > li:nth-child(4) > a{
+         display: none; 
+        }
+        
+        #block-quicklinks > nav > ul > li:nth-child(4) > ul {
+         background: transparent;
+         border: none;
+         display: none; 
+        }
+        
+        #block-quicklinks > nav > ul > li:nth-child(6) > ul{
+         background: transparent;
+         border: none;
+        }
+        
+        #block-quicklinks > nav > ul > li:nth-child(6) > a{
+         display: none;
+        }
+        
+        #block-quicklinks > nav ul li a {
+         color: #fff;
+         text-decoration: none;
+         padding: 5px 2px;
+         text-transform: uppercase;
+         font-weight: 600;
+         position: static;
+         width: 80%; 
+        }
+        
+        #block-quicklinks > nav ul ul li a {
+         line-height: 30px;
+         border: none; 
+        }
+        
+        .button-1 span.rotate{
+         transform: rotate(-180deg);
+        }
+        
+        .button-1 span{
+         float: right;
+         line-height: 40px;
+         transition: 0.5s;
+        }
+        
+        .button-2 span.rotate{
+         transform: rotate(-180deg);
+        }
+        
+        .button-2 span{
+         float: right;
+         line-height: 40px;
+         transition: 0.5s;
+        }
+        
+        .button-3 span.rotate{
+         transform: rotate(-180deg);
+         }
+         
+        .button-3 span{
+         float: right;
+         line-height: 40px;
+         transition: 0.5s;
+         }
+        
+        #block-quicklinks > nav > ul > li.button-item > a {
+         margin-left: 2rem;
+        }
+        
+        #block-quicklinks > nav > ul > li:nth-child(3) > a{
+         display: none; 
+        }
+        
+        #block-quicklinks > nav > ul > li:nth-child(5) > a{
+         display: none; 
+        }
+        
+        #block-quicklinks > nav > ul > li:nth-child(6) {
+         margin-bottom: 1rem;
+          }
+        }
+        /* End of Media Query */
+        /* button left */
+
+
+         /* #block-quicklinks > nav li:focus-within > ul {
+          display: block;
+        }   */
+
+        /* #block-quicklinks > nav ul ul li:focus-within > a {
+          background: orange;
+          color: #fff;
+        } */
+
+       #block-quicklinks > nav > ul > li:nth-child(2) > label > a{
+        margin: 0;
+        border: none; 
+        }
+
+        #block-quicklinks > nav > ul > li:nth-child(5) > label > a{
+        margin: 0;
+        border: none; 
+        }
+
+
+        #block-quicklinks > nav > ul > li.button-item > a {
+            color: #00205B !important;
+        }
+
+        /* #block-quicklinks > nav > ul > li.button-item > a:hover {
+            color: white !important;
+        } */
+
+
+
+        /* End of Media Query */
+        /* button left */
+
+        /* #block-quicklinks > nav ul ul li:focus-within > a {
+          background: orange;
+          color: #fff;
+        } */
+
+
+        </style>
+        <div id="block-onlinemem">
+        <nav aria-labelledby="block-quicklinks-menu" id="block-quicklinks" role="navigation">
+        <h2 class="visually-hidden" id="block-quicklinks-menu">Quick-Links</h2>
+        
+        <nav class="menu menu--quick"><label class="button" for="btn" alt="MDS online menu links">MDS ONLINE 
+          <span class="fas fa-angle-down fa-lg" style="color: #A5C151;"></span> 
+        </label> <input id="btn" type="checkbox" />
+        <ul class="menu">
+
+            <li class="contentline"><a class="menu__item" href="https://csweb.rice.edu/academics/graduate-programs/online-mds" alt="Please visit the MDS online website for more information on Rice online Master Data Science courses and admission requirements.">MDS ONLINE <!-- <label for="btn-3" class="arrow">
+                            <span class="fa fa-close"></span>
+                            </label>
+                            <input type="checkbox" id="btn-3">  --> </a>
+            </li>
+
+            <li class="contentline">
+              <a class="menu__item" href="https://csweb.rice.edu/academics/graduate-programs/online-mds/admissions"  alt="VView the MDS admission requirements.">ADMISSIONS </a>
+             </li> 
+
+            <li class="contentline">
+                
+            <label class="show button-1" style="font-family: MalloryBold, sans-serif !important; font-weight:600;" for="btn-1" alt="View the MDS course curriculum. ">CURRICULUM<span class="fas fa-angle-down fa-lg" style="color: #A5C151;"></span></label> 
+                
+            <a 
+                
+                aria-expanded="false"
+                aria-controls="morecontent1"
+                onClick="myfunction()" href="#curriculum" id="curriculumbtn" class="menu__item has-submenu" alt="View the MDS admission requirements.">CURRICULUM
+                  <span class="fas fa-angle-down fa-lg" style="color: #A5C151;"></span>
+                </a> 
+        
+             <input id="btn-1" type="checkbox"/>
+
+              <!-- for desktop -->
+              <ul class="submenu" >
+                  <li ><a href="https://csweb.rice.edu/academics/graduate-programs/online-mds/curriculum" alt="View the MDS curriculum requirements.">CURRICULUM</a></li>
+
+                  <li ><a href="https://csweb.rice.edu/academics/graduate-programs/online-mds/curriculum/machine-learning-specialization" alt="View the ML specialization requirements.">ML SPECIALIZATION</a></li>
+                  <li ><a href="https://csweb.rice.edu/academics/graduate-programs/online-mds/curriculum/business-analytics-specialization" alt="View the BA specialization requirements.">BA SPECIALIZATION</a></li>
+                  <li ><a href="https://csweb.rice.edu/academics/graduate-programs/online-mds/curriculum/capstone" alt="View the MDS capstone requirements.">CAPSTONE</a></li>
+
+                </ul>
+
+              <!-- for mobile -->
+              <ul id="morecontent1" class="screen">
+                <li ><a class="nava" href="https://csweb.rice.edu/academics/graduate-programs/online-mds/curriculum" alt="View the MDS admission requirements.">CURRICULUM</a></li>
+                <li ><a class="nava" href="https://csweb.rice.edu/academics/graduate-programs/online-mds/curriculum/machine-learning-specialization" alt="View the ML specialization requirements.">ML SPECIALIZATION</a></li>
+                <li ><a class="nava" href="https://csweb.rice.edu/academics/graduate-programs/online-mds/curriculum/business-analytics-specialization" alt="View the BA specialization requirements.">BA SPECIALIZATION</a></li>
+                <li ><a class="nava" href="https://csweb.rice.edu/academics/graduate-programs/online-mds/curriculum/capstone" alt="View the MDS capstone requirements.">CAPSTONE</a></li>
+
+              </ul>
+            </li>
+            
+          <li class="contentline"><label class="show button-2" style="font-family: MalloryBold, sans-serif !important; font-weight:600;" for="btn-2" alt="View more links for why choose the master of data science program at Rice.">WHY MDS@RICE? <span class="fas fa-angle-down fa-lg" style="color: #A5C151;"></span></label> 
+              <a 
+              aria-expanded="false"
+              aria-controls="morecontent2"
+              onClick="myfunction2()" href="#" class="menu__item has-submenu-2" alt="View more links for why choose the master of data science program at Rice."> WHY MDS@RICE? 
+                <span class="fas fa-angle-down fa-lg" style="color: #A5C151;"></span>
+                </a> <input id="btn-2" type="checkbox" />
+
+            <!-- for desktop -->
+            <ul class="submenu-2">
+                <li><a href="https://csweb.rice.edu/academics/graduate-programs/online-mds/careers" alt="View the MDS career paths.">CAREERS </a></li>
+                <li><a href="https://csweb.rice.edu/academics/graduate-programs/online-mds/student-experience" alt="View the online MDS student experience.">STUDENT EXPERIENCE</a></li>
+              
+                <li><a href="https://csweb.rice.edu/academics/graduate-programs/online-mds/faculty" alt="View the MDS online faculty.">FACULTY</a></li>
+                <li><a href="https://d2k.rice.edu/" alt="View our D2K Lab." target="_blank">D2K Lab</a></li>
+                <li><a href="https://csweb.rice.edu/academics/graduate-programs/professional-masters-programs" alt="View on campus program for MDS." target="_blank"> ON-CAMPUS MDS</a></li>
+            </ul>
+
+            <!-- for mobile -->
+            <ul id="morecontent2">
+              <li><a href="https://csweb.rice.edu/academics/graduate-programs/online-mds/careers" alt="View the MDS career paths.">CAREERS </a></li>
+              <li><a href="https://csweb.rice.edu/academics/graduate-programs/online-mds/student-experience" alt="View the online MDS student experience.">STUDENT EXPERIENCE</a></li>
+           
+              <li><a href="https://csweb.rice.edu/academics/graduate-programs/online-mds/faculty" alt="View the MDS online faculty.">FACULTY</a></li>
+              <li><a href="https://d2k.rice.edu/" alt="View our D2K Lab." target="_blank">D2K Lab</a></li>
+              <li><a href="https://csweb.rice.edu/academics/graduate-programs/professional-masters-programs" alt="View on campus program for MDS." target="_blank"> ON-CAMPUS MDS</a></li>
+        </ul>
+            </li> 
+
+            <p class="button-item" style="display: none;"><a class="menu_item hover" href="https://csweb.rice.edu/academics/graduate-programs/apply">Apply Now</a></p>
+            
+            <li><label class="show button-3" style="font-family: MalloryBold, sans-serif !important; font-weight:600;"  for="btn-3" alt="View more links for the MDS online resources guide."><b>RESOURCES</b> 
+              <span class="fas fa-angle-down fa-lg" style="color: #A5C151;"></span></label> 
+              <a onClick="myfunction3()" 
+              
+              aria-expanded="false"
+              aria-controls="morecontent3"
+
+              href="#" class="menu__item has-submenu-3"  alt="View more links for the MDS online resources guide.">RESOURCES 
+                <span class="fas fa-angle-down fa-lg" style="color: #A5C151;"></span>
+                </a> <input id="btn-3" type="checkbox" />
+            
+            <!-- for desktop -->
+            <ul class="submenu-3">
+                <li><a href="https://csweb.rice.edu/academics/graduate-programs/online-mds/faqs" alt="Click here to access frequently asked questions about the MDS online program.">FAQs </a></li>
+                <li><a href="https://csweb.rice.edu/academics/graduate-programs/online-mds/blog" alt="Click here to view the MDS online blog.">BLOG</a></li>
+            </ul>
+            
+            <!-- for mobile -->
+            <ul id="morecontent3">
+              <li><a href="https://csweb.rice.edu/academics/graduate-programs/online-mds/faqs" alt="Click here to access frequently asked questions about the MDS online program.">FAQs </a></li>
+              <li><a href="https://csweb.rice.edu/academics/graduate-programs/online-mds/blog" alt="Click here to view the MDS online blog.">BLOG</a></li>
+            </ul>
+          
+
+            </li> 
+
+
+            <li class="button-item"><a class="menu_item hover" href="https://csweb.rice.edu/academics/graduate-programs/apply" 
+               style="font-family: MalloryBold, sans-serif !important; font-weight:600;" alt="Click here to apply for the MDS online program.">Apply Now</a></li> 
+            
+        </ul>
+        </nav>
+        <!-- End of New Sub Navigation --></nav>
+
+
+<script>
+// function myfunction() {
+//   let morecontent = document.getElementById("morecontent1");
+//   let curriculumbtn = document.getElementById("curriculumbtn");
+//   let allnav = document.getElementsByClassName("nava");
+//   let allscreens = document.getElementsByClassName("screen");
+//   for (var i = 0; i < allscreens.length; i++ ) {
+//     allscreens[i].style.display = "none";
+//   }
+//   task.style.display = "block";
+//   allnav.className = "";
+//   curriculumbtn.className = "active";
+// }
+
+
+// </script>
+
+
+
+
+<!-- script for first line of links -->
+   <script>
+        myfunction(); 
+
+        function myfunction() {
+          var x = document.getElementById("morecontent1");
+          if (x.style.display === "none") {
+              x.style.display = "block";
+          } else {
+            x.style.display = "none";
+               }
+           }
+        </script>   
+
+<!-- script for second line of links -->
+      <script>
+        myfunction2(); 
+
+          function myfunction2() {
+            var x = document.getElementById("morecontent2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+              x.style.display = "none";
+                }
+            }
+          </script>  
+
+<!-- script for second line of links -->
+      <script>
+          myfunction3(); 
+          
+        function myfunction3() {
+          var x = document.getElementById("morecontent3");
+          if (x.style.display === "none") {
+              x.style.display = "block";
+          } else {
+            x.style.display = "none";
+              }
+          }
+        </script>  
+        
+   
+</body>
+</html>
+
+
+
+
